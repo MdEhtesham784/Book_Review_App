@@ -1,0 +1,217 @@
+/* General Layout */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft blue gradient */
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for better readability */
+}
+
+h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* General Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  color: white;
+  text-align: center; /* Center text */
+}
+
+/* Add Book Button */
+.btn.add-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient for Add Book */
+}
+
+.btn.add-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #1c6691); /* Darker gradient on hover */
+}
+
+/* Edit Button Styles */
+.edit-btn {
+  background-color: #3498db; /* Blue for edit action */
+}
+
+.edit-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Delete Button Styles */
+.delete-btn {
+  background-color: #e74c3c; /* Red for delete action */
+}
+
+.delete-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.sort-btn {
+  background-color: #30feb9; /* Red for delete action */
+}
+
+.sort-btn:hover {
+  background-color: #0e9438; /* Darker red on hover */
+}
+
+/* Footer with Gradient */
+footer {
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* Footer gradient */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ecf0f1;
+}
+
+footer a:hover {
+  color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  li img {
+    max-width: 100px;
+    margin: 0 auto 15px;
+    float: none;
+    display: block;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Form Layout for Edit and Add Book Pages */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #fff;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Buttons in Forms */
+form button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Button gradient */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #2980b9, #1c6691); /* Darker gradient on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments for Edit/Add Forms */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
+}

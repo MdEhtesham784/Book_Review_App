@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs'); -%>
+
+    <h1>Book Reviews</h1>
+
+    <a href="/add-book" class="btn add-btn">Add New Book</a>
+
+
+        <a href="/?sort_by=rating" class="btn sort-btn">Sort by Rating</a>
+        <a href="/?sort_by=date_read" class="btn sort-btn">Sort by Date Read</a>
+    
+    <ul>
+        <% books.forEach(book => { %>
+            <li>
+                <h2><%= book.title %></h2>
+                <p>Author: <%= book.author %></p>
+                <p>Rating: <%= book.rating %></p>
+                <p>Review: <%= book.review %></p>
+                <p>Date Read: <%= new Date(book.date_read).toLocaleDateString("en-US") %></p>
+                <img src="<%= book.cover_url %>" alt="Book Cover">
+                <a href="/edit-book/<%= book.id %>" class="btn edit-btn">
+                    <i class="fas fa-edit"></i> Edit
+                </a>
+                <a href="/delete-book/<%= book.id %>" class="btn delete-btn" onclick="return confirm('Are you sure you want to delete this book?')">
+                    <i class="fas fa-trash-alt"></i> Delete
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+
+    <%- include('partials/footer.ejs'); -%>
+
+    
