@@ -4,8 +4,10 @@ Snippet of Home Page
 ![Screenshot 2024-10-08 141527](https://github.com/user-attachments/assets/2ab8136b-4125-4936-b862-b27cb0004e43)
 
 Snippet of Add New Page
-![Screenshot 2024-10-08 141556]![Screenshot 2024-10-08 141620](https://github.com/user-attachments/assets/0598f0b5-cdd4-456c-afaf-5708250d40d4)
-(https://github.com/user-attachments/assets/79d63a71-7f07-4581-8635-7359f006b483)
+![Screenshot 2024-10-08 141556](https://github.com/user-attachments/assets/c6c50a0e-21e9-441f-8410-cdfcbd76f305)
+![Screenshot 2024-10-08 141620](https://github.com/user-attachments/assets/bc5ba8d5-fe0b-4546-b3c9-7bf6caf4200b)
+
+
 
 Snippet of Edit Page
 ![Screenshot 2024-10-08 141715](https://github.com/user-attachments/assets/d0a4b03e-abc1-4992-b515-12f0187f83f4)
